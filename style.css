@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --mainColor:rgb(64, 106, 175);
+    --secondColor:rgb(247, 221, 125);
+    --hoverColor:rgb(139, 130, 115);
+    --blackColor:black;
+    --whiteColor:white;
+}
+/* Nav */
+nav{
+    padding: 0 10% !important;
+    background-color: var(--secondColor);
+}
+nav #link{
+    color: var(--blackColor);
+    font-size: 20px;
+    transition: all 2s;
+}
+nav #link:hover{
+    color: var(--whiteColor);
+    scale: 1.1;
+}
+nav #logo{
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    transition: all 2s;
+}
+nav #logo:hover{
+    color: var(--blackColor);
+    scale: 1.1;
+    cursor: pointer;
+}
+/* Header */
+.header{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+.header .text{
+    width: 400px;
+    color: var(--whiteColor);
+    font-size: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+
+}
+.header .text h5{
+    margin-bottom: 10px;
+}
+.header .text p{
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-weight: bold;
+}
+.header .text #cv{
+    display: block;
+    margin-bottom: 30px;
+    text-decoration: none;
+    background-color: var(--secondColor);
+    color: var(--mainColor);
+    width: 50%;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: all 2s;
+}
+.header .text #cv:hover{
+    scale: 1.1;
+    background-color: var(--hoverColor);
+}
+.header .text .icons #icon {
+    font-size: 2.5em;
+    color: var(--secondColor);
+    transition: all 2s;
+
+}
+.header .text .icons #icon:hover{
+    scale: 1.1;
+    color: var(--hoverColor);
+
+}
+
+.header .imgg{
+    width: 400px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px 5px var(--hoverColor),-3px -3px 3px 5px var(--hoverColor);
+    transition: all 2s;
+
+}
+.header .imgg:hover{
+    scale: 1.2;
+}
+.header .imgg img{
+    width: 100%;
+    height: 500px;
+    border-radius: 30px;
+}
+
+@media screen and (max-width:900px) {
+    .header{
+    flex-direction: column;
+    align-items: center;
+    
+}
+.header .text{
+    align-items: center;
+}
+
+.header .imgg{
+    width: 320px;
+    margin-top: 20px;
+}
+.header .imgg img{
+    height: 400px;
+    
+}
+.about p{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .header{
+    flex-direction: column;
+    align-items: center;
+}
+.header .text{
+    align-items: center;
+}
+
+.header .text{
+    width: 100%;
+    font-size: 15px;
+
+}
+
+.header .imgg{
+    width: 200px;
+    margin-top: 20px;
+}
+.header .imgg img{
+    height: 400px;
+}
+.about p{
+        width: 90%;
+    }
+}
+
+/* About Me */
+.about{
+    width: 100%;
+    background-color: var(--whiteColor);
+    color: var(--mainColor);
+    text-align: center;
+    padding-top: 10%;
+}
+.about h2{
+    font-size: 2.5em;
+    margin-bottom: 10%;
+    transition: all 2s;
+}
+.about h2:hover{
+    scale: 1.1;
+    color: var(--secondColor);
+}
+.about p{
+    font-size: 1.2em;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: var(--secondColor);
+    border-radius: 20px 0px 20px 0;
+    box-shadow: 3px 3px 3px 5px var(--hoverColor),-3px -3px 3px 5px var(--hoverColor);
+    transition: all 2s;
+    margin-bottom: 200px;
+}
+.about p:hover{
+    scale: 1.1;
+    background-color: var(--hoverColor);
+}
+
+
+/* skills */
+
+.my-skills{
+    background-color: var(--mainColor);
+    width: 100%;
+    padding: 5% 2%;
+    margin-bottom: 5%;
+
+}
+.my-skills h2{
+    color: var(--secondColor);
+    font-size: 40px;
+    text-align: center;
+    transition: all 2s;
+    margin-bottom:50px;
+}
+.my-skills h2:hover{
+    color: var(--hoverColor);
+    scale: 1.1;
+}
+.my-skills .skills .skill{
+    width: 80%;
+    background-color: var(--blackColor);
+    border-radius: 30px;
+}
+.my-skills .skills p{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 30px 0;
+    color: var(--whiteColor);
+}
+.my-skills .skills .skill .fg-skill{
+    border-radius: 30px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.my-skills .skills .skill .fg1-skill{
+    width: 95%;
+    background-color: rgb(4, 211, 218);
+
+}
+.my-skills .skills .skill .fg2-skill{
+    width: 75%;
+    background-color: rgb(218, 118, 4);
+
+}
+.my-skills .skills .skill .fg3-skill{
+    width: 20%;
+    background-color: rgb(223, 132, 208);
+
+}
+.my-skills .skills .skill .fg4-skill{
+    width: 40%;
+    background-color: rgb(118, 218, 4);
+
+}
+
+
+/* projects */
+.projects{
+    width: 100%;
+    padding: 10% 5%;
+
+}
+.projects h2{
+    color: var(--secondColor);
+    font-size: 40px;
+    text-align: center;
+    transition: all 2s;
+    margin-bottom:50px;
+}
+.projects h2:hover{
+    scale: 1.1;
+    color: var(--hoverColor);
+}
+.projects .projects-parent .project .imgg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0 40px 0 0;
+}
+.projects .projects-parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.projects .projects-parent .project{
+    width: 400px;
+    background-color: var(--mainColor);
+    border-radius: 0 40px;
+    margin-bottom: 30px;
+    transition: all 2s;
+}
+.projects  .projects-parent .project:hover{
+    scale: 1.2;
+    background-color: var(--hoverColor);
+}
+.projects .projects-parent .project .imgg{
+    background-image: url(./Basket-of-Gold.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    border-radius: 0 40px 0 0;
+
+}
+.projects .projects-parent .project .link{
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects .projects-parent .project .link a{
+    text-decoration: none;
+    background-color: var(--secondColor);
+    padding: 10px 15px;
+    color: var(--whiteColor);
+    border-radius: 0 40px;
+    font-size: 23px;
+    font-weight: bold;
+    transition: all 2s;
+}
+.projects .projects-parent .project .link a:hover{
+    scale: 1.1;
+    color: var(--mainColor);
+    background: var(--whiteColor);
+}
+@media screen  and (max-width:900px){
+    .projects .projects-parent{
+
+    justify-content:center;
+}
+}
