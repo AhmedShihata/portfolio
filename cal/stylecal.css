@@ -1,0 +1,57 @@
+
+.calculator {
+  border: 4px solid hsl(115, 100%, 7%);
+  border-radius: 10px;
+  box-shadow: 20px 3px 6px 10px rgba(0, 0, 0, 0.516), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  margin: 5% auto;
+  max-inline-size: 22rem;
+  gap: 1rem;  
+    display: flex;  
+    flex-direction: column;
+    padding: 1rem;
+    
+}
+
+.calculator__output {
+    border: 5px solid hsl(203, 93%, 49%);
+  background: hsl(202, 11%, 29%);
+  color: hsl(255, 100%, 100%);
+  font-size: 50px;
+    padding: 5%;
+  text-align: end;
+}
+.calculator__keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1);
+  grid-gap: 3px;
+  background: hsl(207, 19%, 61%);
+}
+.calculator__key {
+  background: hsl(210, 25%, 95%);
+  border: none;
+  padding-block-start: 1rem;
+  padding-block-end: 1rem;
+  padding-inline-end: 1.25rem;
+  padding-inline-start: 1.25rem;
+  font-size: 1.5rem;
+}
+.calculator__key:focus {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3) inset;
+  outline: none;
+  transition: all 2s;
+}
+.calculator__key:hover {
+    background: hsl(207, 19%, 55%);
+    scale: 1.1;
+}
+.calculator__key--operator {
+  background: hsl(208, 25%, 86%);
+}
+.calculator__key--operator:active {
+  background: hsl(208, 24%, 80%);
+}
+.calculator__key--enter {
+  grid-column: 4 / 5;
+  grid-row: 2 / span 4;
+  background: hsl(357, 100%, 72%);
+}
