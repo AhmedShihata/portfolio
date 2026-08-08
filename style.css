@@ -357,7 +357,7 @@ nav #logo:hover{
 }
 .form{
     margin-top: 5%;
-    background-color: var(--mainColor);
+    background-color: var(--blackColor);
     display: flex;
     align-items: center;
     justify-content: center;
